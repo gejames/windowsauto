@@ -14,5 +14,5 @@
 
     - name: Install MSI
       win_package: 
-        path: '{{ msi_name }}'
+        path: 'C:\Users\Administrator\Downloads\{{ msi_name }}'
         state: present
