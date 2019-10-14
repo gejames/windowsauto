@@ -1,0 +1,12 @@
+---
+- name: Fetch Remote File
+  hosts: windows
+  gather_facts: false
+
+  vars:
+     file_url: https://upload.wikimedia.org/wikipedia/commons/5/57/NASA-Apollo8-Dec24-Earthrise-b.jpg
+  tasks:
+     - name: Download a file
+      win_get_url:
+        url:  "{{ file_url }}"
+        dest: 'C:\Users\Administrator\Downloads\'
