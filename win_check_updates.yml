@@ -3,5 +3,8 @@
   hosts: '{{ win_target }}'
   gather_facts: False
 
+  vars:
+    win_target: windows
+    
   roles:
     - win_check_updates
