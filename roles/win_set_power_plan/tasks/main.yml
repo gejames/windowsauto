@@ -1,0 +1,5 @@
+---
+# tasks file for win_set_power_plan
+- name: change power plan to high performance
+  win_power_plan:
+    name: {{ win_power_plan }}

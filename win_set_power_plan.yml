@@ -1,0 +1,7 @@
+---
+- name: Set Power Plan
+  hosts: windows
+  gather_facts: False
+
+  roles:
+    - win_set_power_plan

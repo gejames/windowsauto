@@ -1,0 +1,33 @@
+---
+updates:
+  - hostname: {{ inventory_hostname }}
+    kb_id: {{ win_updates.updates.kb}}
+    kb_title: {{ win_updates.updates.title }}
+
+    
+{
+  "updates": [
+    {
+      "update": {
+        "kb": [
+          "{{ win_updates.updates.kb }}"
+        ],
+        "hostname: "{{inventory_hostname }}",
+        "installed": false,
+        "id": "{{ win_updates.updates.id }}",
+        "title": "{{ win_updates.updates.title }}"
+      }
+    },
+    {
+      "update": {
+        "kb": [
+          "{{ win_updates.updates.kb }}"
+        ],
+        "hostname: "{{inventory_hostname }}",
+        "installed": false,
+        "id": "{{ win_updates.updates.id }}",
+        "title": "{{ win_updates.updates.title }}
+      }
+    }
+  ]
+}
