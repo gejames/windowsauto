@@ -1,6 +1,6 @@
 ---
 - name: Install Application from an MSI 
-  hosts: windows
+  hosts: '{{ win_target }}'
 
   vars: 
     msi_name: putty-64bit-0.71-installer.msi

@@ -1,6 +1,6 @@
 ---
 - name: Fetch Remote File
-  hosts: windows
+  hosts: '{{ win_target }}'
   gather_facts: false
 
   vars:

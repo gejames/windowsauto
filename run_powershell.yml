@@ -1,6 +1,6 @@
 ---
 - name: Run powershell script
-  hosts: windows
+  hosts: '{{ win_target }}'
   gather_facts: false
   tasks:
     - name: Run powershell script

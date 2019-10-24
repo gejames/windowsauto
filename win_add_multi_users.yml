@@ -1,6 +1,6 @@
 ---
 - name: Add Multiple Windows Users
-  hosts: all
+  hosts: '{{ win_target }}'
   gather_facts: False
 
   roles:

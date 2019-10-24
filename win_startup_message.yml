@@ -1,6 +1,6 @@
 ---
 - name: Add Windows User
-  hosts: windows
+  hosts: '{{ win_target }}'
   gather_facts: False
 
   roles:

@@ -1,6 +1,6 @@
 ---
 - name: Set Power Plan
-  hosts: windows
+  hosts: '{{ win_target }}'
   gather_facts: False
 
   roles:

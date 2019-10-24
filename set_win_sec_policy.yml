@@ -1,6 +1,6 @@
 ---
 - name: Set Windows Security Policies
-  hosts: windows
+  hosts: '{{ win_target }}'
   gather_facts: False
 
   roles:

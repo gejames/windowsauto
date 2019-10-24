@@ -1,6 +1,6 @@
 ---
 - name: install the iis web service
-  hosts: windows
+  hosts: '{{ win_target }}'
 
   roles:
     - homepage_customizer

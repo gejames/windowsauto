@@ -1,6 +1,6 @@
 ---
 - name: install chocolatey package on Windows host
-  hosts: windows
+ hosts: '{{ win_target }}'
 
   tasks:
 
