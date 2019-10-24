@@ -1,0 +1,8 @@
+---
+- name: Gather Windows Facts
+  hosts: '{{ win_target}}'
+
+  - tasks:
+      - name: Gathering Windows Facts
+        debug: 
+          msg: "Facts have been gathered"
