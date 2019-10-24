@@ -5,7 +5,7 @@
   tasks:
     - name: Gathering Windows Facts
       debug: 
-        msg: "Facts have been gathered"
+        msg:  "{{ ansible_os_name }}"
 
     - set_fact: 
         win_os_family: WIN10WK
@@ -14,6 +14,7 @@
 
     - set_fact:
          win_os_family: WINSERVER
+         cacheable: true
       when: ansible_os_name | regex_search("Windows Server") 
 
 
