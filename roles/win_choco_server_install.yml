@@ -1,0 +1,6 @@
+---
+- name: Install Win Choco Server with AG Role
+  hosts: windows
+  
+  role:
+    - jborean93.win_chocolatey_server
