@@ -5,10 +5,13 @@
  
   tasks:
 
-
     - name: Install multiple packages
-      win_chocolatey:
-        name: 
+      block:
+        - name: "Install {{ item }}"
+          win_chocolatey:
+              name: " {{ item }}"
+              state: present
+      with_items: 
           - googlechrome
           - putty
           - winscp
@@ -16,9 +19,9 @@
           - microsoft-edge-insider-dev
           - notepadplusplus
           - foxitreader
+          - nettime
           - javaruntime
-        state: present
-
+        
     - name: Install filebot 4.7.9
       win_chocolatey:
         name: filebot
