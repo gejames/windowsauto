@@ -11,16 +11,16 @@
           win_chocolatey:
               name: " {{ item }}"
               state: present
-      with_items: 
-          - googlechrome
-          - putty
-          - winscp
-          - 7zip.install
-          - microsoft-edge-insider-dev
-          - notepadplusplus
-          - foxitreader
-          - nettime
-          - javaruntime
+          with_items: 
+              - googlechrome
+              - putty
+              - winscp
+              - 7zip.install
+              - microsoft-edge-insider-dev
+              - notepadplusplus
+              - foxitreader
+              - nettime
+              - javaruntime
         
     - name: Install filebot 4.7.9
       win_chocolatey:
