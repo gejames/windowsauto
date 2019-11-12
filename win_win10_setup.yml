@@ -1,0 +1,27 @@
+---
+- name: Install initial apps on WIN10 VM
+  hosts: '{{ win_target }}'
+
+ 
+  tasks:
+
+
+    - name: Install multiple packages
+      win_chocolatey:
+        name: 
+          - googlechrome
+          - putty
+          - winscp
+          - 7zip.install
+          - microsoft-edge-insider-dev
+          - notepadplusplus
+          - javaruntime
+        state: present
+
+    - name: Install filebot 4.7.9
+      win_chocolatey:
+        name: filebot
+        version: 4.7.9
+        state: present
+
+
