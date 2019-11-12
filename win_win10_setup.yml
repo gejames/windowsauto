@@ -15,6 +15,7 @@
           - 7zip.install
           - microsoft-edge-insider-dev
           - notepadplusplus
+          - foxitreader
           - javaruntime
         state: present
 
