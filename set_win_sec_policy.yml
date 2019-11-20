@@ -2,9 +2,9 @@
 - name: Set Windows Security Policies
   hosts: '{{ tower_hosts_server }}'
   gather_facts: False
-
   
-    roles:
+
+  roles:
     - change_guest_acct
     - max_password_age
     - password_encryption
