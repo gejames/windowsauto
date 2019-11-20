@@ -7,7 +7,7 @@
 
     - name: Install multiple packages
       block:
-        - name: "Install {{ item }}"
+        - name: INSTALL CHOCO PACKAGES
           win_chocolatey:
               name: " {{ item }}"
               state: present
@@ -22,10 +22,10 @@
               - nettime
               - javaruntime
         
-    - name: Install filebot 4.7.9
-      win_chocolatey:
-        name: filebot
-        version: 4.7.9
-        state: present
+        - name: INSTALL FILEBOT 4.7.9
+          win_chocolatey:
+            name: filebot
+            version: 4.7.9
+            state: present
 
 
