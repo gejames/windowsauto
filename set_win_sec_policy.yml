@@ -5,9 +5,16 @@
   
 
   roles:
-   # - change_guest_acct
-    - max_password_age
-   # - password_encryption
-    - system_events
+ 
+
+
+  tasks:
+    - include_role:
+        name: 
+        # - change_guest_acct
+        # - password_encryption
+          - max_password_age
+          - system_events
+      when: server_os == 'RedHat'
 
     
