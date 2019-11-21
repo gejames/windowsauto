@@ -10,11 +10,10 @@
 
   tasks:
     - include_role:
-        name: 
-        # - change_guest_acct
-        # - password_encryption
-          - max_password_age
-          - system_events
+        name: '{{ item }}'
+      with_items:
+         - max_password_age 
+         - system_events
       when: server_os == 'Windows'
 
     
