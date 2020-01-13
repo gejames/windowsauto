@@ -21,6 +21,10 @@
               - foxitreader
               - nettime
               - javaruntime
+              - sysinternals
+              - teamviewer
+              - calibre
+              
         
         - name: INSTALL FILEBOT 4.7.9
           win_chocolatey:
