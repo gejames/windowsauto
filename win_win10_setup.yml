@@ -24,6 +24,7 @@
               - sysinternals
               - teamviewer
               - calibre
+              - google-drive-file-stream
               
         
         - name: INSTALL FILEBOT 4.7.9
